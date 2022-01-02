@@ -47,12 +47,12 @@ a {
   text-decoration: none;
 }
 
-
-
-/* :focus {
-  outline: 0.5vh dashed var(--200com);
-  outline-offset: 1vh;
-} */
+:focus {
+  outline: 0.5vw solid cyan;
+  outline-offset: 0.2vw;
+  border-radius: 16px;
+  border-color: cyan;
+}
 
 /* Scroll Bar */
 
@@ -224,20 +224,21 @@ nav > a > img {
   margin-block: 6vh;
   grid-template-areas: "cat carl blob";
   column-gap: 5px;
+  text-align: center;
 }
 
 .other-servers > div div {
-  border: calc(0.75vh + 5px) solid var(--600);
+  outline: calc(0.75vh + 5px) solid var(--600);
   border-radius: 25px;
   width: 10em;
   height: 15em;
   margin-inline: auto;
-  transition: 200ms;
+  transition: 300ms;
 }
 
 .other-servers > div div:hover {
-  background-color: rgba(0, 0, 0, 0.349);
-  border-radius: 13px;
+  background-color: #00000059;
+  outline: calc(0.75vh + 15px) solid var(--400);
 }
 
 .cat {
@@ -252,8 +253,11 @@ nav > a > img {
   grid-area: blob;
 }
 
+.other-servers img {
+  max-width: 90%;
+}
+
 .other-servers p {
-  text-align: center;
   font-weight: bold;
   font-size: 22px;
 }
@@ -276,6 +280,15 @@ footer h2 {
   font-weight: 500;
   margin: 0;
   color: var(--g);
+}
+
+footer a {
+  text-decoration: underline;
+  transition: color 200ms;
+}
+
+footer a:hover {
+  color: var(--200);
 }
 
 @media screen and (orientation: portrait) {
