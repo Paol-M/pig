@@ -92,13 +92,16 @@ nav > a img {
 
 main {
   margin-inline: 10vw;
+  margin-block: 10vh;
+}
+main div {
   display: flex;
   flex-direction: row;
-  margin-block: 10vh;
 }
 main h1 {
   font-size: 3rem;
   max-width: 30ch;
+  margin: 0;
 }
 main img {
   width: 30%;
