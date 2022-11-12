@@ -25,6 +25,20 @@
   --background: #1f1313;
 }
 
+aside {
+  background-color: var(--900);
+  color: var(--100);
+  margin: 0;
+  padding: 0.4em 0;
+  font-size: 1em;
+  text-align: center;
+}
+
+aside a {
+  color: #50ecef;
+  font-weight: bold;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -239,6 +253,13 @@ nav > a > img {
 .other-servers > div div:hover {
   background-color: #00000059;
   outline: calc(0.75vh + 15px) solid var(--400);
+}
+
+.other-servers > div div img {
+  transition: transform 200ms;
+}
+.other-servers > div div:hover img {
+  transform: scale(1.4);
 }
 
 .cat {
